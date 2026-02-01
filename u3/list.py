@@ -2,6 +2,7 @@
 # List for Imports
 # 
 
+# Initial list of camping items.
 items = [
     "tent poles",
     "sleeping bag",
@@ -14,3 +15,6 @@ items = [
     "compass",
     "clothing",
 ]
+
+# Print the total number of items in the list.
+print("Total Items:", len(items))
