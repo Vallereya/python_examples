@@ -17,10 +17,10 @@ items = [
 ]
 
 # Print the total number of items in the list.
-print("Total Items:", len(items))
+print("Initial Total Items:", len(items))
 
 # Sort the list of items alphabetically.
-print("Sorted Items:")
+print("Initial Sorted Items:")
 
 for item in sorted(items):
     print("-", item)
