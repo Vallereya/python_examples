@@ -26,6 +26,6 @@ print("Updated Reversed Sorted Items:")
 for extended_item in sorted(extended_items, reverse=True):
     print("-", extended_item)
 
-# Non-Reverse sorted list, for testing purposes only.
+# Non-Reversed sorted list, for testing purposes only.
 # for extended_item in sorted(extended_items):
 #     print("-", extended_item)
