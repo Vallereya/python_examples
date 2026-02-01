@@ -3,8 +3,12 @@
 # 
 
 # Importing the list from `add.py`.
-from add import items
+from add import extended_items
 
 # Replacing `stove` with `binoculars` in the existing list.
-index = items.index("stove")
-items[index] = "binoculars"
+# Find the index of `stove` and replace it.
+index = extended_items.index("stove")
+extended_items[index] = "binoculars"
+
+# New variable to hold the updated list after replacement.
+replaced_items = extended_items
