@@ -1,8 +1,8 @@
 # 
-# List for Imports
+# Initial List
 # 
 
-# Initial list of camping items.
+# List of camping items.
 items = [
     "tent poles",
     "sleeping bag",
