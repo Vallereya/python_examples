@@ -16,11 +16,15 @@ items = [
     "clothing",
 ]
 
-# Print the total number of items in the list.
-print("Initial Total Items:", len(items))
+# Updated so that it can be run as a script, 
+# when executed directly.
+if __name__ == "__main__":
 
-# Sort the list of items alphabetically.
-print("Initial Sorted Items:")
+    # Print the total number of items in the list.
+    print("Initial Total Items:", len(items))
 
-for item in sorted(items):
-    print("-", item)
+    # Sort the list of items alphabetically.
+    print("Initial Sorted Items:")
+
+    for item in sorted(items):
+        print("-", item)

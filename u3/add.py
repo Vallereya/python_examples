@@ -17,15 +17,19 @@ items.extend([
 # Creating a new variable to hold the extended list.
 extended_items = items
 
-# Print the total number of items in the list after extending.
-print("\nUpdated Total Items:", len(extended_items))
+# Updated so that it can be run as a script, 
+# when executed directly.
+if __name__ == "__main__":
 
-# Sort the list of items reversed alphabetically.
-print("Updated Reversed Sorted Items:")
+    # Print the total number of items in the list after extending.
+    print("Updated Total Items:", len(extended_items))
 
-for extended_item in sorted(extended_items, reverse=True):
-    print("-", extended_item)
+    # Sort the list of items reversed alphabetically.
+    print("Updated Reversed Sorted Items:")
 
-# Non-Reversed sorted list, for testing purposes only.
-# for extended_item in sorted(extended_items):
-#     print("-", extended_item)
+    for extended_item in sorted(extended_items, reverse=True):
+        print("-", extended_item)
+
+    # Non-Reversed sorted list, for testing purposes only.
+    # for extended_item in sorted(extended_items):
+    #     print("-", extended_item)
