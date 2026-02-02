@@ -10,8 +10,11 @@ from add import extended_items
 index = extended_items.index("stove")
 extended_items[index] = "binoculars"
 
+# Sorting again the list after replacement.
+extended_items.sort()
+
 # Find the index of `binoculars` for later use.
-replaced_items = extended_items.index("binoculars")
+new_index = extended_items.index("binoculars")
 
 # Print the total number of items in the list after replacement.
 print("Updated Total Items After Replacement:", len(extended_items))
