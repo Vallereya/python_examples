@@ -12,6 +12,7 @@
 
 import random
 
+# Card Values.
 values = [
     "A",
     "2",
@@ -28,9 +29,17 @@ values = [
     "K",
 ]
 
+# Card Suits.
 suits = [
     "H",
     "D",
     "C",
     "S",
 ]
+
+# Get the number of cards to be dealt from the user.
+num_cards = int(
+    input("How many cards would you like to be dealt? ")
+)
+
+
