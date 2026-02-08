@@ -38,8 +38,10 @@ suits = [
 ]
 
 # Get the number of cards to be dealt from the user.
-num_cards = int(
+dealt_cards = int(
     input("How many cards would you like to be dealt? ")
 )
 
+# Build a list of the cards to be dealt, no duplicates.
+hand = []
 
