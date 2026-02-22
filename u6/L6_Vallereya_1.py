@@ -32,7 +32,14 @@ def main():
 
         # Check if the password is correct.
         if password == users[username]:
-            print("Login successful!")
+
+            # Determine security level based on username.
+            if username == "guest":
+                security_level = "Guest"
+                print(f"\nWelcome, {username}. You have Guest access.")
+            else:
+                security_level = "Security Level 1"
+                print(f"\nWelcome, {username}. You have {security_level}.")
             return
 
 if __name__ == "__main__":
