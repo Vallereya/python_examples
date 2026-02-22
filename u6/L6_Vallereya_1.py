@@ -18,5 +18,11 @@ def main():
 
     username = input("Enter username: ").strip()
 
+    if username not in users:
+        print("Incorrect username, please try again.")
+        return
+    
+    max_attempts = 3
+
 if __name__ == "__main__":
     main()
