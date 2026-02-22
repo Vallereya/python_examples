@@ -10,9 +10,13 @@
 
 def main():
 
-    # Create a dictionary to store usernames and passwords.
+    # Creating a dictionary to store usernames.
     users = {
         "guest": "guest",
+        "admin": "admin",
     }
 
+    username = input("Enter username: ").strip()
 
+if __name__ == "__main__":
+    main()
