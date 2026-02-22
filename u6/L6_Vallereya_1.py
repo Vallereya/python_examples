@@ -10,19 +10,25 @@
 
 def main():
 
-    # Creating a dictionary to store usernames.
+    # Creating a dictionary to store usernames and passwords.
     users = {
         "guest": "guest",
         "admin": "admin",
     }
 
+    # Prompt user for username.
     username = input("Enter username: ").strip()
 
+    # Check if the username exists. 
     if username not in users:
         print("Incorrect username, please try again.")
         return
     
+    # Set a maximum number of attempts for password.
     max_attempts = 3
+
+    for attempts_num in range(1, max_attempts + 1):
+        password = input("Enter password: ")
 
 if __name__ == "__main__":
     main()
