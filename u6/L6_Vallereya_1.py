@@ -30,5 +30,10 @@ def main():
     for attempts_num in range(1, max_attempts + 1):
         password = input("Enter password: ")
 
+        # Check if the password is correct.
+        if password == users[username]:
+            print("Login successful!")
+            return
+
 if __name__ == "__main__":
     main()
